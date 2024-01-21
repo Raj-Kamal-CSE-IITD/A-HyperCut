@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "3in+M9PG8yUWWaqr00J2oWdnvL4s7oUa+0ht6V0BrAobPuTKcvbnaSTrUFpOds7QTk8hH56mM7x9tIiSq7Vv/A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rajkm\\OneDrive\\HyperGraphClustering\\HyperGraphClustering\\HyperGraphClustering.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rajkm\\.nuget\\packages\\mathnet.numerics\\5.0.0\\mathnet.numerics.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

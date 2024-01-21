@@ -1,0 +1,17 @@
+C:\Users\rajkm\OneDrive\HyperGraphClustering\HyperGraphClustering\bin\Debug\net6.0\HyperGraphClustering.exe
+C:\Users\rajkm\OneDrive\HyperGraphClustering\HyperGraphClustering\bin\Debug\net6.0\HyperGraphClustering.deps.json
+C:\Users\rajkm\OneDrive\HyperGraphClustering\HyperGraphClustering\bin\Debug\net6.0\HyperGraphClustering.runtimeconfig.json
+C:\Users\rajkm\OneDrive\HyperGraphClustering\HyperGraphClustering\bin\Debug\net6.0\HyperGraphClustering.dll
+C:\Users\rajkm\OneDrive\HyperGraphClustering\HyperGraphClustering\bin\Debug\net6.0\HyperGraphClustering.pdb
+C:\Users\rajkm\OneDrive\HyperGraphClustering\HyperGraphClustering\bin\Debug\net6.0\MathNet.Numerics.dll
+C:\Users\rajkm\OneDrive\HyperGraphClustering\HyperGraphClustering\obj\Debug\net6.0\HyperGraphClustering.csproj.AssemblyReference.cache
+C:\Users\rajkm\OneDrive\HyperGraphClustering\HyperGraphClustering\obj\Debug\net6.0\HyperGraphClustering.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rajkm\OneDrive\HyperGraphClustering\HyperGraphClustering\obj\Debug\net6.0\HyperGraphClustering.AssemblyInfoInputs.cache
+C:\Users\rajkm\OneDrive\HyperGraphClustering\HyperGraphClustering\obj\Debug\net6.0\HyperGraphClustering.AssemblyInfo.cs
+C:\Users\rajkm\OneDrive\HyperGraphClustering\HyperGraphClustering\obj\Debug\net6.0\HyperGraphClustering.csproj.CoreCompileInputs.cache
+C:\Users\rajkm\OneDrive\HyperGraphClustering\HyperGraphClustering\obj\Debug\net6.0\HyperGraphClustering.csproj.CopyComplete
+C:\Users\rajkm\OneDrive\HyperGraphClustering\HyperGraphClustering\obj\Debug\net6.0\HyperGraphClustering.dll
+C:\Users\rajkm\OneDrive\HyperGraphClustering\HyperGraphClustering\obj\Debug\net6.0\refint\HyperGraphClustering.dll
+C:\Users\rajkm\OneDrive\HyperGraphClustering\HyperGraphClustering\obj\Debug\net6.0\HyperGraphClustering.pdb
+C:\Users\rajkm\OneDrive\HyperGraphClustering\HyperGraphClustering\obj\Debug\net6.0\HyperGraphClustering.genruntimeconfig.cache
+C:\Users\rajkm\OneDrive\HyperGraphClustering\HyperGraphClustering\obj\Debug\net6.0\ref\HyperGraphClustering.dll
