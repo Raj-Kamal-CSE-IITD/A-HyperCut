@@ -20,7 +20,7 @@ Each line of any dataset file represents a hyperedge. A line of any dataset file
 There are two c# code files named *HyperGraph.cs* and *Program.cs* in the folder A-HyperCut/HypergraphClustering/  
 In *Program.cs*, the main() function starts at line #624 and it ends at line #795.  
 ## There are four methods:  
-Star_Expansion() for baseline STAR
-Clique_Expansion() for baseline CLIQUE
-Proposed_local_round for baseline LocalClustering
-Average_Clustering for A-HyperCut
+Star_Expansion() for baseline STAR  
+Clique_Expansion() for baseline CLIQUE  
+Proposed_local_round for baseline LocalClustering  
+Average_Clustering for A-HyperCut  
