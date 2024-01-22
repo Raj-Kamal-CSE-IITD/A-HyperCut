@@ -6,4 +6,6 @@ This is implementation of Hypergraph Local Clusteringg algorithm **A-HyperCut** 
 **MathNet** library  
 **Linq** Library  
 # How to launch the project in Visual Studio
-Assuming that your system satisfies the requirements listed above. And, you have extracted this project to the folder **A-HyperCut**. Go to the folder **A-HyperCut**, and double click on the file **HyperGraphClustering.sln**. This will automatically launch the project in Visual Studio. You need to build the solution by clicking on *Build Solution* in *Build* menu of Visual Studio before you run the project. Finally, click on *Star Without Debugging* in the *Debug* menu of Visual Studio. The output of the code is saved in .txt file in A-HyperCut/HyperGraphClustering/results/
+Assuming that your system satisfies the requirements listed above. And, you have extracted this project to the folder **A-HyperCut**. Go to the folder **A-HyperCut**, and double click on the file **HyperGraphClustering.sln**. This will automatically launch the project in Visual Studio. You need to build the solution by clicking on *Build Solution* in *Build* menu of Visual Studio before you run the project. Finally, click on *Star Without Debugging* in the *Debug* menu of Visual Studio. The output of the code is saved in *.txt file in A-HyperCut/HyperGraphClustering/results/
+# Datasets
+The datasets are saved in *.txt files in the folder A-HyperCut/HyperGraphClustering/instance/  
