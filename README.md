@@ -6,3 +6,4 @@ This is implementation of Hypergraph Local Clusteringg algorithm **A-HyperCut** 
 **MathNet** library  
 **Linq** Library  
 # How to launch the project in Visual Studio
+Assuming that your system satisfies the requirements listed above. And, you have extracted this project to the folder **A-HyperCut**. Go to the folder **A-HyperCut**, and double click on the file 
