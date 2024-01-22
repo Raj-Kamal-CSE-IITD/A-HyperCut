@@ -16,3 +16,4 @@ Each line of any dataset file represents a hyperedge. A line of any dataset file
 21 8 9 1  
 15 2  
 15 5 1  
+# How to use the code  
