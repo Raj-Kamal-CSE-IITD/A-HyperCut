@@ -24,3 +24,4 @@ Star_Expansion() for baseline STAR
 Clique_Expansion() for baseline CLIQUE  
 Proposed_local_round for baseline LocalClustering  
 Average_Clustering for A-HyperCut  
+Al line #648 (Program.cs), mention which method you want to call. At line #629 (Program.cs), mention which dataset is to be used. Note that these two lines declare the list of methods, and the list of datasets respectively. So, you can run the code simultaneously for multiple methods and datasets. 
