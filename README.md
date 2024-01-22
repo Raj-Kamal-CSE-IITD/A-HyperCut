@@ -10,6 +10,7 @@ Assuming that your system satisfies the requirements listed above. And, you have
 # Datasets
 The datasets are saved as *.txt files in the folder A-HyperCut/HyperGraphClustering/instance/  
 Each line of any dataset file represents a hyperedge. A line of any dataset file consists of the vertices contained in the corresponding hyperedge. Any two vertices in the same line are separated by a space. The last number of every line is weight of the corresponding hyperedge. The first 10 lines of the dataset file **graphprod_LCC.txt** are shown below.  
+  
 21 39 40 41 42 1  
 21 8 1  
 21 8 9 1  
