@@ -25,7 +25,8 @@ Clique_Expansion() for baseline CLIQUE
 Proposed_local_round() for baseline LocalClustering  
 Average_Clustering() for A-HyperCut  
 At line #648 (Program.cs), mention which method you want to call. At line #629 (Program.cs), mention which dataset is to be used. Note that these two lines declare the list of methods, and the list of datasets respectively. So, you can run the code simultaneously for multiple methods and datasets.  
-![image](https://github.com/Raj-Kamal-CSE-IITD/A-HyperCut/assets/111127650/d5c50885-2f81-43ca-a505-2787d14afbfa)
+![image](https://github.com/Raj-Kamal-CSE-IITD/A-HyperCut/assets/111127650/d5c50885-2f81-43ca-a505-2787d14afbfa)  
+![image](https://github.com/Raj-Kamal-CSE-IITD/A-HyperCut/assets/111127650/4fee89c3-d3a1-4c0e-9e07-c9f32a8e6d58)
 
 # Names of output *.txt files in the folder /A-HyperCut/HyperGraphClustering/results/
 The file *alpha_dbpedia-recordlabel_LCC.txt* corresponds to the Figure 3 (a), and the file *alpha_dbpedia-genre_LCC.txt* corresponds to the Figure 3 (b). These figures plot the conductance vs the parameter alpha.  
