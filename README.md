@@ -3,8 +3,8 @@ This is implementation of Hypergraph Local Clustering algorithm **A-HyperCut** b
 ## Requirements
 **Visual Studio 2022**  
 **.NET 6.0**  
-**MathNet** library  
-**Linq** Library  
+**MathNet.Numerics 5.0.0** library  
+**Linq 4.3.0** Library  
 # Launching the project in Visual Studio
 Assuming that your system satisfies the requirements listed above. And, you have extracted this project to the folder **A-HyperCut**. Go to the folder **A-HyperCut**, and double click on the file **HyperGraphClustering.sln**. This will automatically launch the project in Visual Studio. Make sure to update the paths at line #626 and #627 of Program.cs according to the location of the dowloaded folder **A-HyperCut** in your system. You need to build the solution by clicking on *Build Solution* in *Build* menu of Visual Studio before you run the project. Finally, click on *Start Without Debugging* in the *Debug* menu of Visual Studio. The output of the code is saved in *.txt file in the folder /A-HyperCut/HyperGraphClustering/results/
 # Datasets
