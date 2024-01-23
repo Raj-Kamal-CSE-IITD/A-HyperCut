@@ -30,3 +30,4 @@ At line #648 (Program.cs), mention which method you want to call. At line #629 (
 
 # Names of output *.txt files in the folder /A-HyperCut/HyperGraphClustering/results/
 The file *alpha_dbpedia-recordlabel_LCC.txt* corresponds to the Figure 3 (a), and the file *alpha_dbpedia-genre_LCC.txt* corresponds to the Figure 3 (b). These figures plot the conductance vs the parameter alpha.  
+The Figure 2 (a) compares the four methods on the dataset *graphprod_LCC*. Since there are four curves in this subfigure, so there are four .txt files in the folder /A-HyperCut/HypergraphClustering/results. Each of these four files corresponds to results produced by execution of one of the four methods on the dataset *graphprod_LCC*.  
