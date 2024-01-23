@@ -37,4 +37,6 @@ The Figure 2 (a) compares the four methods on the dataset *graphprod_LCC*. Since
 *LocalClustering_graphprod_LCC.txt* for baseline LocalClustering on the dataset *graphprod_LCC*.  
 *HyperCut_graphprod_LCC.txt* contains execution results of A-HyperCut on the dataset *graphprod_LCC*.  
   
-We follow this convention for the execution of these methods on the other datasets also.
+We follow this way of naming the output files for the execution of these methods on the other datasets also.  
+
+This completes the README.md file. Thanks.
