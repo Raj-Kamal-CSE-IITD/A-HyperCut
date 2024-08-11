@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Collections.Generic;
 using System.Linq;
@@ -41,22 +41,6 @@ namespace HyperGraphCLustering
             {
                 return edges.Count;
             }
-        }
-
-        public void AddEdge(List<int> edge, double w = 1)
-        {
-            int eid = edges.Count;
-            edges.Add(edge);
-            foreach (var v in edge)
-            {
-                while (v >= incident_edges.Count)
-                {
-                    incident_edges.Add(new List<int>());
-                }
-                incident_edges[v].Add(eid);
-            }
-            edge_weights[eid] = w;
-            edge_ID[edge] = eid;
         }
 
         public static HyperGraph Open(string fn)
@@ -300,9 +284,12 @@ namespace HyperGraphCLustering
             return vec;
         }
 
-        public static Vector<double> A_HyperCut(HyperGraph H, Matrix<double> vec_vertices, Matrix<double> vec_edges, int v_init, double alpha)
+        public static Vector<double> A_HyperCut(HyperGraph H, Matrix<double> vec_vertices, Matrix<double> vec_edges, int v_init, double alpha, double epsilon)
         {
-            int iterations = 0;
+            var pre_vec = vec_vertices.Column(0);
+            pre_vec.Clear();
+            var next_vec = pre_vec;
+            next_vec[v_init] = 1.0;
             double beta = 1.0 - alpha;
             var init_row = vec_vertices.Row(v_init);
             init_row[0] = alpha;
@@ -313,7 +300,9 @@ namespace HyperGraphCLustering
             }
             else
             {
-                iterations = int.MaxValue;
+                init_row[0] = 1.0;
+                vec_vertices.SetRow(v_init, init_row);
+                return vec_vertices.Column(0);
             }
             vec_vertices.SetRow(v_init, init_row);
             HashSet<int> active_vertices = new()
@@ -321,15 +310,17 @@ namespace HyperGraphCLustering
                 v_init
             };
             HashSet<int> active_edges = new();
-            foreach (var active_vertex in  active_vertices)
+            foreach (var active_vertex in active_vertices)
             {
                 foreach (var edge_index in H.incident_edges[active_vertex])
                 {
                     active_edges.Add(edge_index);
                 }
             }
-            while (iterations < 3e1)
+            var err_vec = next_vec;
+            while (err_vec.L2Norm() > epsilon)
             {
+                pre_vec = next_vec;
                 foreach (var active_edge_index in active_edges)
                 {
                     var active_edge = H.edge_ID_rev[active_edge_index];
@@ -349,13 +340,14 @@ namespace HyperGraphCLustering
                         active_edges.Add(incident_edge);
                     }
                 }
-                vec_edges.ClearColumns(0,2);
-                vec_vertices.SetColumn(0,vec_vertices.Column(0) + alpha * vec_vertices.Column(1));
+                vec_edges.ClearColumns(0, 2);
+                next_vec = vec_vertices.Column(0) + vec_vertices.Column(1);
+                vec_vertices.SetColumn(0, vec_vertices.Column(0) + alpha * vec_vertices.Column(1));
                 vec_vertices.SetColumn(1, beta * vec_vertices.Column(1));
                 vec_vertices.SetColumn(3, vec_vertices.Column(1).PointwiseMultiply(vec_vertices.Column(2)));
-                iterations++;
+                err_vec = next_vec - pre_vec;
             }
-            return vec_vertices.Column(0);
+            return vec_vertices.Column(0) + vec_vertices.Column(1);
         }
     }
 
@@ -367,11 +359,6 @@ namespace HyperGraphCLustering
     {
         public List<Dictionary<int, double>> adj_list = new List<Dictionary<int, double>>();
 
-        public int Degree(int v)
-        {
-            return adj_list[v].Count;
-        }
-
         public double w_Degree(int v)
         {
             double sum = 0;
@@ -382,37 +369,6 @@ namespace HyperGraphCLustering
             return sum;
         }
 
-        public int n
-        {
-            get
-            {
-                return adj_list.Count;
-            }
-        }
-
-        public int m
-        {
-            get
-            {
-                int sum = 0;
-                for (int i = 0; i < n; i++)
-                {
-                    sum += adj_list[i].Keys.Count;
-                }
-                return sum / 2;
-            }
-        }
-
-        public void AddEdge(List<int> edge, double w = 1)
-        {
-            while (Math.Max(edge[0], edge[1]) >= adj_list.Count)
-            {
-                adj_list.Add(new Dictionary<int, double>());
-            }
-
-            adj_list[edge[0]][edge[1]] = w;
-            adj_list[edge[1]][edge[0]] = w;
-        }
         public static Graph CreateStar(HyperGraph H)
         {
             int n = H.num_nodes;
@@ -429,7 +385,7 @@ namespace HyperGraphCLustering
                 for (int i = 0; i < edge_size; i++)
                 {
                     G.adj_list[n + edge_ID][edge[i]] = edge_weight;
-                    G.adj_list[edge[i]][ n +edge_ID] = edge_weight;
+                    G.adj_list[edge[i]][n + edge_ID] = edge_weight;
                 }
             }
             return G;
@@ -437,7 +393,7 @@ namespace HyperGraphCLustering
 
         public static Vector<double> PowerStar(Graph G, Matrix<double> vec_vertices, int v_init, double alpha, int m, int n, double epsilon)
         {
-            var pre_vec = CreateVector.Dense<double>(m+n);
+            var pre_vec = CreateVector.Dense<double>(m + n);
             pre_vec[v_init] = 1.0;
             double beta = 1.0 - alpha;
             var init_row = vec_vertices.Row(v_init);
@@ -449,7 +405,7 @@ namespace HyperGraphCLustering
             }
             else
             {
-                return pre_vec.SubVector(0,n);
+                return pre_vec.SubVector(0, n);
             }
             vec_vertices.SetRow(v_init, init_row);
             HashSet<int> active_vertices = new()
@@ -488,13 +444,13 @@ namespace HyperGraphCLustering
                 temp_active_vertices.Clear();
                 err_vec = vec_vertices.Column(0).Subtract(pre_vec);
             }
-            return vec_vertices.Column(0).SubVector(0,n);
+            return vec_vertices.Column(0).SubVector(0, n);
         }
 
         public static Graph CreateClique(HyperGraph H)
         {
             var G = new Graph();
-            for (int i =0; i < H.num_nodes;i++)
+            for (int i = 0; i < H.num_nodes; i++)
             {
                 G.adj_list.Add(new Dictionary<int, double>());
             }
