@@ -392,11 +392,11 @@ namespace HyperGraphCLustering
             string in_path = "../../../instance/";
             string out_path = "../../../results/";
 
-            //List<string> datasets = new List<string> { "graphprod_LCC.txt" };
+            List<string> datasets = new List<string> { "graphprod_LCC.txt" };
             //List<string> datasets = new List<string> { "netscience_LCC.txt" };
             //List<string> datasets = new List<string> { "dblp_kdd_LCC.txt" };
             //List<string> datasets = new List<string> { "opsahl-collaboration_LCC.txt" };
-            List<string> datasets = new List<string> { "dbpedia-writer_LCC.txt" };
+            //List<string> datasets = new List<string> { "dbpedia-writer_LCC.txt" };
             //List<string> datasets = new List<string> { "youtube-groupmemberships_LCC.txt" };
             //List<string> datasets = new List<string> { "dbpedia-recordlabel_LCC.txt" };
             //List<string> datasets = new List<string> { "dbpedia-genre_LCC.txt" };
