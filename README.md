@@ -29,6 +29,11 @@ At line #412 (Program.cs), mention which method you want to call. At line #395 (
 
 ## Parameter $`\alpha`$
 This parameter is called teleportation constant or restart probability. You can set the value of this parameter at line #419.
+## Parameter $`\varepsilon`$
+This parameter is called convergence criterion. You can set the value of this parameter at line #418.
+## Output cluster size
+You can set the value of this parameter at line #420. This parameter takes values from 1 to 100.   
+
 ![image](https://github.com/user-attachments/assets/300457f7-0533-4932-bd1d-3536013b2379)
 
 # Names of output *.txt files in the folder /A-HyperCut/HyperGraphClustering/results/
