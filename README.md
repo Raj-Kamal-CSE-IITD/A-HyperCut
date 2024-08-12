@@ -25,8 +25,7 @@ Clique_Expansion() for baseline CLIQUE
 Proposed_local_round() for baseline LocalClustering  
 Average_Clustering() for A-HyperCut  
 At line #412 (Program.cs), mention which method you want to call. At line #395 (Program.cs), mention which dataset is to be used. Note that these two lines declare the list of methods, and the list of datasets respectively. So, you can run the code simultaneously for multiple methods and datasets.  
-![image](https://github.com/Raj-Kamal-CSE-IITD/A-HyperCut/assets/111127650/d5c50885-2f81-43ca-a505-2787d14afbfa)  
-![image](https://github.com/Raj-Kamal-CSE-IITD/A-HyperCut/assets/111127650/4fee89c3-d3a1-4c0e-9e07-c9f32a8e6d58)
+![image](https://github.com/user-attachments/assets/919041b2-accd-46e1-ae2f-24166a3ba458)
 
 ## Parameters
 
