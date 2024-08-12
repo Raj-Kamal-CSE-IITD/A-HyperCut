@@ -32,7 +32,11 @@ This parameter is called teleportation constant or restart probability. You can 
 ## Parameter $`\varepsilon`$
 This parameter is called convergence criterion. You can set the value of this parameter at line #418.
 ## Output cluster size
-You can set the value of this parameter at line #420. This parameter takes values from 1 to 100.   
+You can set the value of this parameter at line #420. This parameter takes values from 1 to 100.  
+
+The reader are referred to the research for details of these parameters.  
+
+  
 
 ![image](https://github.com/user-attachments/assets/300457f7-0533-4932-bd1d-3536013b2379)
 
