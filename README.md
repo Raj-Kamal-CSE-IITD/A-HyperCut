@@ -27,7 +27,9 @@ Average_Clustering() for A-HyperCut
 At line #412 (Program.cs), mention which method you want to call. At line #395 (Program.cs), mention which dataset is to be used. Note that these two lines declare the list of methods, and the list of datasets respectively. So, you can run the code simultaneously for multiple methods and datasets.  
 ![image](https://github.com/user-attachments/assets/919041b2-accd-46e1-ae2f-24166a3ba458)
 
-## Parameters
+## Parameter $`\alpha`$
+This parameter is called teleportation constant or restart probability. You can set the value of this parameter at line #419.
+![image](https://github.com/user-attachments/assets/300457f7-0533-4932-bd1d-3536013b2379)
 
 # Names of output *.txt files in the folder /A-HyperCut/HyperGraphClustering/results/
 The file *alpha_dbpedia-recordlabel_LCC.txt* corresponds to the Figure 3 (a), and the file *alpha_dbpedia-genre_LCC.txt* corresponds to the Figure 3 (b). These figures plot the conductance vs the parameter alpha.  
