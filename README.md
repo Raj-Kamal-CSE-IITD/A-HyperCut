@@ -41,12 +41,12 @@ The readers are referred to [our research paper](https://doi.org/10.1145/3677126
 ![image](https://github.com/user-attachments/assets/300457f7-0533-4932-bd1d-3536013b2379)
 
 # Names of output *.txt files in the folder /A-HyperCut/HyperGraphClustering/results/
-  
+For given values of the parameters
 *Clique_graphprod_LCC.txt* contains execution results of baseline CLIQUE on the dataset *graphprod_LCC*.   
 *Star_graphprod_LCC.txt* contains execution results of baseline STAR on the dataset *graphprod_LCC*.  
 *LocalClustering_graphprod_LCC.txt* for baseline LocalClustering on the dataset *graphprod_LCC*.  
 *HyperCut_graphprod_LCC.txt* contains execution results of A-HyperCut on the dataset *graphprod_LCC*.  
   
-We follow this way of naming the output files for the execution of these methods on the other datasets also.  
+In general, the output file is named as Method_DatasetName.txt where Medhod takes values in {Clique, Star, LocalClustering, HyperCut} and DatasetName is the name of any of the datasets used in [our research paper](https://doi.org/10.1145/3677126).  
 
 This completes the README.md file. Thanks.
