@@ -41,8 +41,6 @@ The readers are referred to [our research paper](https://doi.org/10.1145/3677126
 ![image](https://github.com/user-attachments/assets/300457f7-0533-4932-bd1d-3536013b2379)
 
 # Names of output *.txt files in the folder /A-HyperCut/HyperGraphClustering/results/
-The file *alpha_dbpedia-recordlabel_LCC.txt* corresponds to the Figure 3 (a), and the file *alpha_dbpedia-genre_LCC.txt* corresponds to the Figure 3 (b). These figures plot the conductance vs the parameter alpha.  
-The Figure 2 (a) compares the four methods on the dataset *graphprod_LCC*. Since there are four curves in this subfigure, so there are four .txt files in the folder /A-HyperCut/HypergraphClustering/results. Each of these four files corresponds to results produced by execution of one of the four methods on the dataset *graphprod_LCC*. These four files are  
   
 *Clique_graphprod_LCC.txt* contains execution results of baseline CLIQUE on the dataset *graphprod_LCC*.   
 *Star_graphprod_LCC.txt* contains execution results of baseline STAR on the dataset *graphprod_LCC*.  
