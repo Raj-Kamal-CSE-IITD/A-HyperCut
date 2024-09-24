@@ -17,7 +17,7 @@ Each line of any dataset file represents a hyperedge. A line of any dataset file
 15 2  
 15 5 1  
 # Use the code  
-There are two c# code files named *HyperGraph.cs* and *Program.cs* in the folder /A-HyperCut/HypergraphClustering/  
+There are two c# code files named *HyperGraph.cs* and *Program.cs* in the folder /A-HyperCut/HyperGraphClustering/  
 In *Program.cs*, the main() function starts at line #390 and it ends at line #559.  
 ## There are four methods:  
 Star_Expansion() for baseline STAR  
@@ -34,7 +34,7 @@ This parameter is called convergence criterion. You can set the value of this pa
 ## Output cluster size
 You can set the value of this parameter at line #420. This parameter takes values from 1 to 100.  
 
-The reader are referred to the research papers for details of these parameters.  
+The readers are referred to the research papers for details of these parameters.  
 
   
 
