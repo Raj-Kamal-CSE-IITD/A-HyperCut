@@ -34,7 +34,7 @@ This parameter is called convergence criterion. You can set the value of this pa
 ## Output cluster size
 You can set the value of this parameter at line #420. This parameter takes values from 1 to 100.  
 
-The readers are referred to the research papers for details of these parameters.  
+The readers are referred to [our research paper](https://doi.org/10.1145/3677126) for details of these parameters.  
 
   
 
